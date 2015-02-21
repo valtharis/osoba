@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="file:/W:/java/Osoba/dist/" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>Osoba</title>
+        <vendor>xyz</vendor>
+        <homepage href=""/>
+        <description>Osoba</description>
+        <description kind="short">Osoba</description>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.8+"/>
+        <jar href="Osoba.jar" main="true"/>
+    </resources>
+    <applet-desc height="300" main-class="osoba.Aplet" name="Osoba" width="300">
+    </applet-desc>
+</jnlp>

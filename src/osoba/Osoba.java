@@ -7,11 +7,22 @@ package osoba;
  */
 public class Osoba {
     
+    //przechowuje pesel
     private String pesel;
+    
+    //przechowuje date urodzenia w formacie rrrr-m-d
     private String dataUrodzenia;
+    
+    //przechowuje imie
     private String imie;
+    
+    //przechowuje nazwisko
     private String nazwisko;
+    
+    //przechowuje plec
     private String plec;
+    
+    //przechowuje obywatelstwo
     private String obywatelstwo;
     
     /**
@@ -31,8 +42,11 @@ public class Osoba {
     /**
      * Tworzy obiekt osoby
      * @param pesel
+     * przyjmuje pesel osoby
      * @param imie
+     * przyjmuje imie osoby
      * @param nazwisko
+     * przyjmuje nazwisko osoby
      */
     public Osoba(String pesel, String imie, String nazwisko){
         
@@ -52,6 +66,7 @@ public class Osoba {
      * dataUrodzenia
      * plec
      * @param pesel
+     * przyjmuje pesel
      */
     public void setPesel(String pesel){
 
@@ -87,64 +102,72 @@ public class Osoba {
     }
     
     /**
-     * Ustawia imie
+     * 
      * @param imie
+     * Ustawia imie
      */
     public void setImie(String imie){
         this.imie = imie;
     }
     
     /**
-     * Ustawia nazwisko
+     * 
      * @param nazwisko
+     * Ustawia nazwisko
      */
     public void setNazwisko(String nazwisko){
         this.nazwisko = nazwisko;
     }
     
     /**
-     * Ustawia obywatelstwo
+     * 
      * @param obywatelstwo
+     * Ustawia obywatelstwo
      */
     public void setObywatelstwo(String obywatelstwo){
         this.obywatelstwo = obywatelstwo;
     }
     
     /**
-     * Zwraca imie
+     * 
      * @return
+     * Zwraca imie
      */
     public String getImie(){
         return this.imie;
     }
     
     /**
-     * Zwraza nazwisko
+     * 
      * @return
+     * Zwraza nazwisko
      */
     public String getNazwisko(){
         return this.nazwisko;
     }
     
     /**
-     * Zwraca pesel
+     * 
      * @return
+     * Zwraca pesel
      */
     public String getPesel(){
         return this.pesel;
     }
     
     /**
-     * Zwraca plec
+     * 
      * @return
+     * Zwraca plec
      */
     public String getPlec(){
         return this.plec;
     }
     
     /**
-     * Zwraca date urodzenia
+     * 
      * @return
+     * Zwraca date urodzenia
      */
     public String getDataUrodzenia(){
         return this.dataUrodzenia;
@@ -153,6 +176,7 @@ public class Osoba {
     /**
      * Zwraca obywatelstwo
      * @return
+     * Zwraca obywatelstwo
      */
     public String getObywatelstwo(){
         return this.obywatelstwo;
@@ -212,16 +236,14 @@ public class Osoba {
         System.out.println(String.format("Obywatelstwo:%s",this.obywatelstwo));
     } 
 
-    
-    /**
-     *
-     * 
+       
+  /*
     public static void main(String args[]){
-        Osoba o = new Osoba();
-        o.setPesel("88023456739");
-        o.displayAll();
-        
+        //Osoba o = new Osoba();
+        Osoba o = new Osoba("88023456739","ala","jakas");
+        //o.setPesel("88023456739");
+        o.displayAll();  
     }
-    
-    */
+  */   
+   
 }

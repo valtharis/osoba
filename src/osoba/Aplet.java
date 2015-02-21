@@ -40,7 +40,7 @@ public class Aplet extends Applet implements ActionListener{
         
         showBtn = new Button("Pokarz dane");
         dane = new TextArea();
-        dane.enable(false);
+
         
         add(labelImie);
         add(fieldImie);
@@ -66,18 +66,14 @@ public class Aplet extends Applet implements ActionListener{
     public void actionPerformed(ActionEvent e){
         if(e.getSource()==showBtn){
             
-            Osoba o = new Osoba(this.fieldImie.getText(),this.fieldNazwisko.getText(),this.fieldPesel.getText());
-            o.setObywatelstwo(this.fieldPesel.getText());
+            Osoba o = new Osoba(this.fieldPesel.getText(),this.fieldImie.getText(),this.fieldNazwisko.getText());
+            o.setObywatelstwo(this.fieldObywatelstwo.getText());
             
             this.dane.setText(String.format(
                 "Pesel:%s\nImie:%s\nNazwisko:%s\nData urodzenia:%s\nPlec:%s\nObywatelstwo:%s",
                 o.getPesel(),o.getImie(),o.getNazwisko(),o.getDataUrodzenia(),o.getPlec(),o.getObywatelstwo()
             ));
-            repaint();
         }
     }
-    
-    
-
 
 }
